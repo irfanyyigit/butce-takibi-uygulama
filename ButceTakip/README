@@ -1,1 +1,175 @@
+# Kişisel Bütçe Takip Uygulaması
 
+Bu proje, Java dili ile geliştirilmiş basit bir konsol tabanlı **Kişisel Bütçe Takip Sistemi** uygulamasıdır.
+
+Kullanıcılar uygulama üzerinden:
+
+- Gelir ekleyebilir
+- Gider kaydedebilir
+- İşlem geçmişini görüntüleyebilir
+- Güncel bakiyeyi takip edebilir
+
+Uygulama tamamen terminal/konsol üzerinden çalışmaktadır.
+
+---
+
+# Özellikler
+
+- ✅ Gelir ekleme sistemi
+- ✅ Gider ekleme sistemi
+- ✅ Güncel bakiye hesaplama
+- ✅ İşlem geçmişi görüntüleme
+- ✅ Konsol tabanlı menü sistemi
+- ✅ ArrayList kullanımı
+- ✅ Basit ve anlaşılır yapı
+
+---
+
+# Kullanılan Teknolojiler
+
+- Java
+- ArrayList
+- Scanner
+- Konsol Programlama
+
+---
+
+# Proje Dosyası
+
+```bash
+ButceTakip.java
+```
+
+---
+
+# Not
+
+Bu uygulamada herhangi bir veritabanı veya dosya kayıt sistemi bulunmamaktadır.
+
+Program kapatıldığında tüm veriler sıfırlanır.
+
+---
+
+# ⚙️ Kurulum
+
+## 1. Java Kurulumu
+
+Bilgisayarınızda Java JDK kurulu olmalıdır.
+
+Kurulumu kontrol etmek için terminal veya CMD üzerinden şu komutları çalıştırın:
+
+```bash
+java -version
+```
+
+```bash
+javac -version
+```
+
+Eğer sürüm bilgisi görünüyorsa Java başarıyla kurulmuştur.
+
+Java indirme bağlantısı:
+https://www.oracle.com/java/technologies/downloads/
+
+---
+
+# Programı Çalıştırma
+
+## 1. Java dosyasını derleyin
+
+Terminali proje klasöründe açın ve şu komutu çalıştırın:
+
+```bash
+javac ButceTakip.java
+```
+
+## 2. Programı başlatın
+
+```bash
+java ButceTakip
+```
+
+---
+
+# Menü Sistemi
+
+Program açıldığında aşağıdaki seçenekler görüntülenir:
+
+```text
+1. Gelir Ekle
+2. Gider Ekle
+3. Özet Göster
+4. Çıkış
+```
+
+---
+
+# Örnek Kullanım
+
+```text
+--- Kişisel Bütçe Takip ---
+
+1. Gelir Ekle
+2. Gider Ekle
+3. Özet Göster
+4. Çıkış
+
+Seçiminiz: 1
+
+Gelir miktarı: 5000
+Gelir eklendi!
+```
+
+---
+
+# Özet Sistemi
+
+"Özet Göster" seçeneği ile:
+
+- Tüm gelir/gider hareketleri
+- Güncel bakiye bilgisi
+
+ekrana yazdırılır.
+
+Örnek çıktı:
+
+```text
+--- İşlem Geçmişi ---
+
+Gelir: +5000 TL
+Gider: -1200 TL
+
+Güncel Bakiye: 3800 TL
+```
+
+---
+
+# Program Yapısı
+
+Program içerisinde:
+
+- `ArrayList<String>` kullanılarak işlem geçmişi tutulur
+- `double bakiye` değişkeni ile toplam para hesaplanır
+- `Scanner` sınıfı ile kullanıcıdan veri alınır
+
+Tüm işlemler tek bir `.java` dosyası içerisinde çalışmaktadır.
+
+---
+
+# Geliştirme Fikirleri
+
+Projeye ileride şu özellikler eklenebilir:
+
+- Dosyaya kayıt sistemi
+- Veritabanı entegrasyonu
+- Aylık raporlama
+- Grafiksel arayüz (GUI)
+- Harcama kategorileri
+- Tarih bazlı işlem kayıtları
+- PDF rapor oluşturma
+
+---
+
+# Geliştirici
+
+Bu proje Java pratiği ve temel programlama mantığını geliştirmek amacıyla hazırlanmıştır.
