@@ -1,62 +1,62 @@
-# Kişisel Bütçe Takip Uygulaması
+# Personal Budget Tracking System
 
-Bu proje, Java dili ile geliştirilmiş basit bir konsol tabanlı **Kişisel Bütçe Takip Sistemi** uygulamasıdır.
+## Description
 
-Kullanıcılar uygulama üzerinden:
+Personal Budget Tracking System is a console-based Java application designed to help users monitor their personal finances through a simple and intuitive interface.
 
-- Gelir ekleyebilir
-- Gider kaydedebilir
-- İşlem geçmişini görüntüleyebilir
-- Güncel bakiyeyi takip edebilir
+The application allows users to record income and expenses, review transaction history, and track their current balance. It serves as a practical example of fundamental Java programming concepts, including data structures, user input handling, and financial calculations.
 
-Uygulama tamamen terminal/konsol üzerinden çalışmaktadır.
+The project is intended for educational purposes and demonstrates how basic financial management systems can be implemented using core Java technologies.
 
----
+## Technologies
 
-# Özellikler
+The project was developed using the following technologies:
 
-- ✅ Gelir ekleme sistemi
-- ✅ Gider ekleme sistemi
-- ✅ Güncel bakiye hesaplama
-- ✅ İşlem geçmişi görüntüleme
-- ✅ Konsol tabanlı menü sistemi
-- ✅ ArrayList kullanımı
-- ✅ Basit ve anlaşılır yapı
+* Java
+* ArrayList
+* Scanner
+* Object-Oriented Programming Fundamentals
+* Console-Based Application Development
 
----
+## Features
 
-# Kullanılan Teknolojiler
+### Income Management
 
-- Java
-- ArrayList
-- Scanner
-- Konsol Programlama
+* Add income transactions
+* Automatically update account balance
+* Record financial inflows
 
----
+### Expense Tracking
 
-# Proje Dosyası
+* Add expense transactions
+* Deduct expenses from the current balance
+* Maintain spending records
 
-```bash
-ButceTakip.java
-```
+### Transaction History
 
----
+* Store transaction records during runtime
+* Display complete income and expense history
+* Provide a simple financial overview
 
-# Not
+### Balance Monitoring
 
-Bu uygulamada herhangi bir veritabanı veya dosya kayıt sistemi bulunmamaktadır.
+* Calculate current balance automatically
+* Update totals after every transaction
+* Display financial status in real time
 
-Program kapatıldığında tüm veriler sıfırlanır.
+### User-Friendly Menu System
 
----
+* Interactive console interface
+* Simple navigation options
+* Easy-to-use workflow
 
-# ⚙️ Kurulum
+## Installation
 
-## 1. Java Kurulumu
+### Prerequisites
 
-Bilgisayarınızda Java JDK kurulu olmalıdır.
+Before running the application, ensure that Java JDK is installed on your computer.
 
-Kurulumu kontrol etmek için terminal veya CMD üzerinden şu komutları çalıştırın:
+Verify the installation by running:
 
 ```bash
 java -version
@@ -66,110 +66,120 @@ java -version
 javac -version
 ```
 
-Eğer sürüm bilgisi görünüyorsa Java başarıyla kurulmuştur.
+If version information is displayed, Java has been successfully installed.
 
-Java indirme bağlantısı:
-https://www.oracle.com/java/technologies/downloads/
+### Clone the Repository
 
----
+```bash
+git clone https://github.com/your-username/personal-budget-tracking-system.git
 
-# Programı Çalıştırma
+cd personal-budget-tracking-system
+```
 
-## 1. Java dosyasını derleyin
+## Running the Application
 
-Terminali proje klasöründe açın ve şu komutu çalıştırın:
+### Compile the Program
+
+Open a terminal in the project directory and run:
 
 ```bash
 javac ButceTakip.java
 ```
 
-## 2. Programı başlatın
+### Start the Application
 
 ```bash
 java ButceTakip
 ```
 
----
+## Usage
 
-# Menü Sistemi
-
-Program açıldığında aşağıdaki seçenekler görüntülenir:
+When the program starts, the following menu options are displayed:
 
 ```text
-1. Gelir Ekle
-2. Gider Ekle
-3. Özet Göster
-4. Çıkış
+1. Add Income
+2. Add Expense
+3. Show Summary
+4. Exit
 ```
 
----
-
-# Örnek Kullanım
+### Example Workflow
 
 ```text
---- Kişisel Bütçe Takip ---
+--- Personal Budget Tracking System ---
 
-1. Gelir Ekle
-2. Gider Ekle
-3. Özet Göster
-4. Çıkış
+1. Add Income
+2. Add Expense
+3. Show Summary
+4. Exit
 
-Seçiminiz: 1
+Select an option: 1
 
-Gelir miktarı: 5000
-Gelir eklendi!
+Income Amount: 5000
+
+Income added successfully.
 ```
 
----
+## Transaction Summary
 
-# Özet Sistemi
+The **Show Summary** option displays:
 
-"Özet Göster" seçeneği ile:
+* All recorded income transactions
+* All recorded expense transactions
+* Current account balance
 
-- Tüm gelir/gider hareketleri
-- Güncel bakiye bilgisi
-
-ekrana yazdırılır.
-
-Örnek çıktı:
+Example output:
 
 ```text
---- İşlem Geçmişi ---
+--- Transaction History ---
 
-Gelir: +5000 TL
-Gider: -1200 TL
+Income: +5000 TL
+Expense: -1200 TL
 
-Güncel Bakiye: 3800 TL
+Current Balance: 3800 TL
 ```
 
----
+## Project Structure
 
-# Program Yapısı
+The application is implemented within a single Java file:
 
-Program içerisinde:
+```text
+ButceTakip.java
+```
 
-- `ArrayList<String>` kullanılarak işlem geçmişi tutulur
-- `double bakiye` değişkeni ile toplam para hesaplanır
-- `Scanner` sınıfı ile kullanıcıdan veri alınır
+Core components include:
 
-Tüm işlemler tek bir `.java` dosyası içerisinde çalışmaktadır.
+* `ArrayList<String>` for transaction storage
+* `double balance` for balance calculations
+* `Scanner` for user input handling
 
----
+## Limitations
 
-# Geliştirme Fikirleri
+* No database integration
+* No file persistence
+* Data is stored only during runtime
+* All information is lost when the application is closed
 
-Projeye ileride şu özellikler eklenebilir:
+## Future Improvements
 
-- Dosyaya kayıt sistemi
-- Veritabanı entegrasyonu
-- Aylık raporlama
-- Grafiksel arayüz (GUI)
-- Harcama kategorileri
-- Tarih bazlı işlem kayıtları
-- PDF rapor oluşturma
+Potential enhancements include:
 
----
+* File-based data storage
+* Database integration
+* Monthly financial reports
+* Graphical User Interface (GUI)
+* Expense categorization
+* Date-based transaction tracking
+* PDF report generation
+* Multi-user support
 
-# Geliştirici
+## Learning Objectives
 
-Bu proje Java pratiği ve temel programlama mantığını geliştirmek amacıyla hazırlanmıştır.
+This project demonstrates:
+
+* Java syntax and fundamentals
+* User input processing
+* Collection management with ArrayList
+* Financial calculations
+* Console application development
+* Basic software design principles
